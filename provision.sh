@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-echo "Installing Apache and setting it up..."
+echo "Update the Ubuntu package list"
 apt-get update >/dev/null 2>&1
-apt-get install -y apache2 >/dev/null 2>&1
-rm -rf /var/www
-ln -fs /vagrant /var/www
+
+echo "Provision box with basic tools (e.g. curl, git, etc)"
+apt-get install -y git curl >/dev/null 2>&1
+
