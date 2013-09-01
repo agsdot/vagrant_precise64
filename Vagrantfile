@@ -75,7 +75,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # # }
   #
   config.vm.provision "shell", path: "provision.sh"
+  config.vm.provision "shell", path: "setup_javascript.sh"
   config.vm.provision "shell", path: "setup_ruby.sh"
+
 
   # config.vm.provision :puppet do |puppet|
   #   puppet.manifests_path = "manifests"
