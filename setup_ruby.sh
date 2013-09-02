@@ -26,8 +26,8 @@ echo "*** Install a gem, bootstrap sass ***"
 gem install bootstrap-sass
 
 echo "*** Ensure permissions work for regular / non-root user ***"
-chown -R vagrant $HOME >/dev/null 2>&1 
-chown -R vagrant $HOME/.rbenv >/dev/null 2>&1 
+chown -R vagrant $HOME #>/dev/null 2>&1 
+chown -R vagrant $HOME/.rbenv #>/dev/null 2>&1 
 
 # echo "Setting up Ruby environment, RVM, Ruby, and Gems"
 # echo " "
