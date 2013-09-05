@@ -17,17 +17,17 @@ git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/rub
 source $HOME/.profile
 # exec $SHELL -l
 
-echo "*** Install Ruby 2.0.0 ***"
-rbenv install 2.0.0-p247
+echo "*** Install Ruby 1.9.3 ***"
+rbenv install 1.9.3-p448
 rbenv rehash
-rbenv global 2.0.0-p247 
+rbenv global 1.9.3-p448 
 
 echo "*** Install a gem, bootstrap sass ***"
 gem install bootstrap-sass
 
 echo "*** Ensure permissions work for regular / non-root user ***"
 chown -R vagrant $HOME #>/dev/null 2>&1 
-chown -R vagrant $HOME/.rbenv #>/dev/null 2>&1 
+#chown -R vagrant $HOME/.rbenv #>/dev/null 2>&1 
 
 # echo "Setting up Ruby environment, RVM, Ruby, and Gems"
 # echo " "
